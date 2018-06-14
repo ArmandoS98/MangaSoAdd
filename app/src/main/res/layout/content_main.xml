@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:layout_margin="14dp"
+    tools:showIn="@layout/activity_main">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_below="@+id/img_user"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="MangaSo"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_portada"
+
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Portada"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <ImageButton
+        android:id="@+id/btn_portada"
+        android:layout_below="@+id/tv_portada"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_add_image"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:layout_height="160dp"
+        android:background="@color/DarkGreyMe"/>
+
+    <EditText
+        android:layout_below="@+id/btn_portada"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agrega un Titulo"/>
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_below="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agrega un Descripcion"/>
+
+    <EditText
+        android:id="@+id/et_ranking"
+        android:layout_below="@+id/et_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agrega un Ranking"/>
+
+    <EditText
+        android:id="@+id/et_temporadas"
+        android:layout_below="@+id/et_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agrega un Numero Tempradas"/>
+
+</RelativeLayout>
